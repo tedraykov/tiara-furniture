@@ -1,10 +1,27 @@
 <div class="nav-wrapper" [class.nav-effect]="isNavOnTop">
   <nav class="container">
-    <a class="brand" href="">
-      <img src="assets/tiara-logo.png" alt="">
-    </a>
-    <ul>
-      <li><a href="#">Начало </a></li>
+    <div class="brand">
+      <a href="">
+        <img src="assets/tiara-logo.png" alt="">
+      </a>
+    </div>
+    <button
+      class="hamburger hamburger--3dx"
+      [class.is-active]="isNavExpanded"
+      type="button"
+      tabindex="-1"
+      aria-label="Menu"
+      aria-controls="navigation"
+      *ngIf="isMenuMobile"
+      (click)="isNavExpanded = !isNavExpanded">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <ul
+      [class.mobile-menu]="isMenuMobile"
+      [class.expanded]="isNavExpanded">
+      <li><a href="#">Начало</a></li>
       <li><a href="#">За нас</a></li>
       <li><a href="#">Контакт</a></li>
     </ul>
