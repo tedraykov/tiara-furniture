@@ -6,12 +6,12 @@
     section {
         margin-bottom: 2rem;
     }
+}
 
-  p {
-    padding: 0 15%;
-    color: $p-color;
-    text-align: justify;
-  }
+p {
+  padding: 0 15%;
+  color: $p-color;
+  text-align: justify;
 }
 
 header {
@@ -35,6 +35,12 @@ app-article {
 @media screen and (max-width:1200px) {
   app-article {
     flex: 0 0 50%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  p {
+    padding: 0;
   }
 }
 

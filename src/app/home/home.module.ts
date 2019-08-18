@@ -4,16 +4,20 @@ import { MainCarouselComponent } from './main-carousel/main-carousel.component';
 import { HomeComponent } from './home.component';
 import { SummaryComponent } from './summary/summary.component';
 import { ArticleComponent } from './summary/article/article.component';
+import { CompanyInfoComponent } from './company-info/company-info.component';
+import { ParallaxScrollModule } from 'ng2-parallaxscroll';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    ParallaxScrollModule
   ],
   declarations: [
     MainCarouselComponent,
     HomeComponent,
     SummaryComponent,
-    ArticleComponent
+    ArticleComponent,
+    CompanyInfoComponent
   ]
 })
 export class HomeModule {
