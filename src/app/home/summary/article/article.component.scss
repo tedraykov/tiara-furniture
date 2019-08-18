@@ -1,4 +1,32 @@
+@import "../../../../assets/variables";
+
 :host {
   display: flex;
   flex-direction: column;
+
+  article {
+    height: 100%;
+    margin: 1rem;
+    overflow: hidden;
+
+    .content {
+      padding: 1rem;
+    }
+  }
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 1rem; 
+}
+
+p {
+  color: $p-color;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }

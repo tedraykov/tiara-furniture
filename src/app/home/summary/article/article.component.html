@@ -1,5 +1,9 @@
-<div>
-  <img [src]="article.imageUrl" alt="image">
-</div>
-<h4>{{article.title | uppercase}}</h4>
-<p>{{article.text}}</p>
+<article class="shadow rounded">
+  <figure>
+    <img [src]="article.imageUrl" alt="image">
+  </figure>
+  <div class="content">
+    <h4>{{article.title | uppercase}}</h4>
+    <p>{{article.text}}</p>
+  </div>
+</article>
