@@ -6,6 +6,7 @@ import { SummaryComponent } from './summary/summary.component';
 import { ArticleComponent } from './summary/article/article.component';
 import { CompanyInfoComponent } from './company-info/company-info.component';
 import { ParallaxScrollModule } from 'ng2-parallaxscroll';
+import { PartnersComponent } from './partners/partners.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { ParallaxScrollModule } from 'ng2-parallaxscroll';
     HomeComponent,
     SummaryComponent,
     ArticleComponent,
-    CompanyInfoComponent
+    CompanyInfoComponent,
+    PartnersComponent
   ]
 })
 export class HomeModule {
