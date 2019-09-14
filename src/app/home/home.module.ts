@@ -7,20 +7,26 @@ import { ArticleComponent } from './summary/article/article.component';
 import { CompanyInfoComponent } from './company-info/company-info.component';
 import { ParallaxScrollModule } from 'ng2-parallaxscroll';
 import { PartnersComponent } from './partners/partners.component';
+import { ContactsComponent } from "./contacts/contacts.component";
+import { MatIconModule } from '@angular/material/icon';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    ParallaxScrollModule
-  ],
-  declarations: [
-    MainCarouselComponent,
-    HomeComponent,
-    SummaryComponent,
-    ArticleComponent,
-    CompanyInfoComponent,
-    PartnersComponent
-  ]
+   imports: [
+      CommonModule,
+      ParallaxScrollModule,
+      MatIconModule
+   ],
+   declarations: [
+      MainCarouselComponent,
+      HomeComponent,
+      SummaryComponent,
+      ArticleComponent,
+      CompanyInfoComponent,
+      PartnersComponent,
+      ContactsComponent,
+      GalleryComponent
+   ]
 })
 export class HomeModule {
 }

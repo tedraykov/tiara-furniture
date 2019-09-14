@@ -8,7 +8,10 @@ import { Article } from '../models/article.interface';
 })
 export class ArticleComponent implements OnInit {
   @Input() article: Article;
-  constructor() { }
+  hovered: boolean;
+  constructor() {
+    this.hovered = false;
+  }
 
   ngOnInit() {
   }
