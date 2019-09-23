@@ -3,6 +3,7 @@
 :host {
   display: flex;
   flex-direction: column;
+  z-index: 1;
 
   article {
     height: 100%;

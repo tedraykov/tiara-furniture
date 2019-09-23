@@ -1,15 +1,58 @@
 :host {
   display: flex;
   height: 100vh;
+  background: url("/assets/carousel_01_c.jpg") rgba(0,0,0,0.7);
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding: auto;
 }
 
-.slideshow-item {
+.wrapper {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: white;
+  }
+
+  .subtitle {
+    font-family: 'Open Sans', sans-serif;
+    color: #c6c6c6;
   }
 }
+
+button {
+  margin: 2rem 0 0;
+  border-radius: 1rem;
+  border: none;
+  display: inline-block;
+  width: 15rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  background: rgb(252, 130, 0);
+  background: linear-gradient(133deg, rgb(252, 201, 0) 0%, rgba(252, 162, 0, 1) 100%);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .title {
+      font-size: 2rem;
+    }
+  }
+}
+
+

@@ -3,6 +3,7 @@
   position: fixed;
   display: flex;
   width: 100vw;
+  z-index: 2;
   font-size: 14px;
   background: rgb(25, 25, 25);
   background: linear-gradient(180deg, rgba(25, 25, 25, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
@@ -37,7 +38,7 @@ nav {
       display: flex;
 
       a {
-        padding: 2rem 1rem;
+        padding: 1rem;
         color: white;
         text-decoration: none;
       }

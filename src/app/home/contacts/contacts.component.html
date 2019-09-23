@@ -1,9 +1,9 @@
 <div class="bg-wrapper">
-   <section class="container">
+   <section class="container-fluid">
       <div class="acrylic-card">
          <header>
             <h4>ПОРЪЧАЙТЕ</h4>
-            <p>Купете мебели за вашия дом</p>
+            <p class="subtitle">Купете мебели за вашия дом</p>
          </header>
          <div class="content">
             <p>Посетете нашия магазин и разгледайте предложенията ни.</p>
@@ -15,7 +15,7 @@
       <div class="acrylic-card">
          <header>
             <h4>ЗАВЕРЕТЕ ОФЕРТА</h4>
-            <p>Доверете се на експертен съвет</p>
+            <p class="subtitle">Доверете се на експертен съвет</p>
          </header>
          <div class="content">
             <p>Споделете с нас идеи и предложения за Вашия нов проект.</p>
@@ -27,11 +27,16 @@
       <div class="acrylic-card">
          <header>
             <h4>СЛЕДВАЙТЕ НИ</h4>
-            <p>за нови намаления</p>
+            <p class="subtitle">за нови намаления</p>
          </header>
          <div class="content">
             <label for="subscribe-input">
-               <input name="subscribe-input" id="subscribe-input" type="email">
+               <input placeholder="Email"
+                      class="form-control"
+                      name="subscribe-input"
+                      id="subscribe-input"
+                      type="email"
+                      aria-describedby="emailHelp">
             </label>
          </div>
          <div class="footer">

@@ -4,8 +4,12 @@
   font-size: 14px;
 
   section {
-    margin-bottom: 2rem;
+    margin-bottom: 4em;
   }
+}
+
+h2 {
+  text-align: center;
 }
 
 p {
@@ -43,11 +47,5 @@ figure {
   }
   figure {
     flex: 0 0 50%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  figure {
-    flex: 0 0 100%;
   }
 }

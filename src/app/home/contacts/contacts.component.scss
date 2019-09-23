@@ -1,6 +1,9 @@
 .bg-wrapper {
-   background: url("/assets/contacts.jpg") rgba(0, 0, 0, 0.8);
+   background-repeat: no-repeat;
+   background-position: center;
    background-size: cover;
+   background-image: url("/assets/contacts.jpg");
+   background-color: rgba(0, 0, 0, 0.8);
    background-blend-mode: multiply;
 }
 
@@ -26,31 +29,67 @@ section {
             font-weight: bold;
          }
 
+         .subtitle {
+            color: #c6c6c6;
+         }
+
          p {
             font: inherit;
          }
       }
-   }
+      .content {
+         flex: 1;
+      }
 
-   .content {
-      flex: 1;
-   }
+      .footer {
+         margin-top: 1rem;
+      }
 
-   .footer {
-      margin-top: 1rem;
-   }
+      a {
+         color: white;
+         transition: color 300ms ease-in-out;
+         display: flex;
+         .mat-icon {
+            margin-left: 0.25rem;
+         }
+      }
 
-   a {
-      color: white;
-      transition: color 300ms ease-in-out;
-      display: flex;
-      .mat-icon {
-         margin-left: 0.25rem;
+      a:hover {
+         text-decoration: none;
+         color: #e5ae49;
+      }
+      label {
+         width: 100%;
+      }
+
+      input {
+         font-family: 'Open Sans', sans-serif;
       }
    }
+}
 
-   a:hover {
-      text-decoration: none;
-      color: #e5ae49;
+@media screen and (max-width: 1000px) {
+   section {
+      .acrylic-card {
+         header {
+            margin: 1rem 0 0.5rem;
+         }
+      }
    }
 }
+
+@media screen and (max-width: 768px) {
+   section {
+      flex-direction: column;
+      .acrylic-card {
+         margin: 1rem 2rem;
+      }
+   }
+}
+/*
+@media screen and (max-width:576px) {
+   .acrylic-card {
+      flex: 0 0 100%;
+   }
+}*/
+
